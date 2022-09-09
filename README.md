@@ -6,6 +6,15 @@ Minimal docker image running ubuntu xenial that has the AWS cli installed.
 
 `docker run -t -i tuesd4y/xenial-aws aws --version`
 
+## Building
+
+```bash
+docker buildx build \
+--push \
+--platform linux/arm/v7,linux/arm64/v8,linux/amd64 \
+--tag tuesd4y/xenial-aws:latest .
+```
+
 ## License
 
 Released under the MIT License, please see [License](./LICENSE) for more details.
