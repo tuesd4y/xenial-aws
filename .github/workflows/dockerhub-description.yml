@@ -16,5 +16,5 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
-        repository: peterevans/dockerhub-description
+        repository: tuesd4y/xenial-aws
         short-description: ${{ github.event.repository.description }}
